@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating Systems Course</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #2c3e50;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        .semester-info {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+        .course-info {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .resource-card {
+            background-color: #fff;kground-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+        .resource-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+        }
+        .card-header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        .card-header.videos {
+            background-color: #e74c3c;
+        }
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #7f8c8d;
+        }
+        .card-description {
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .card-cta {
+            text-align: center;
+            color: #3498db;
+            font-weight: bold;
+            margin-top: auto;
+            padding: 10px;
+            border-top: 1px solid #eee;
+            transition: background-color 0.3s;
+        }
+        .card-cta:hover {
+            background-color: #f5f9ff;
+        }
+        .card-cta.videos {
+            color: #e74c3c;
+        }
+        .card-cta.videos:hover {
+            background-color: #fff5f5;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        /* .instructor-info {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .instructor-info h2 {
+            color: #3498db;
+            margin-top: 0;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Operating Systems</h1>
+        <div class="semester-info">Spring Semester 2025 | Department of Computer Science</div>
+    </header>
+    
+    <div class="course-info">
+        <p>Welcome to the Operating Systems course. This website provides access to course materials including slides and supplementary videos that demonstrate key OS concepts including multithreading, synchronization, resource management, and more.</p>
+    </div>
+    
+    <!-- <div class="instructor-info">
+        <h2>Course Information</h2>
+        <p><strong>Lecture Times:</strong> Monday & Wednesday, 10:00 AM - 11:30 AM</p>
+        <p><strong>Lab Sessions:</strong> Friday, 2:00 PM - 4:00 PM</p>
+        <p><strong>Office Hours:</strong> Thursday, 1:00 PM - 3:00 PM</p>
+        <p><strong>Final Exam:</strong> June 10, 2025, 9:00 AM - 12:00 PM</p>
+    </div>
+     -->
+    <div class="resources-grid">
+        <a href="slides.html" class="resource-card">
+            <div class="card-header">Lecture Slides</div>
+            <div class="card-content">
+                <div class="card-icon">📊</div>
+                <div class="card-description">
+                    <p>Access all course lecture slides covering foundational OS concepts, process management, thread synchronization, memory management, and more.</p>
+                </div>
+                <div class="card-cta">View All Slides</div>
+            </div>
+        </a>
+        
+        <a href="videos.html" class="resource-card">
+            <div class="card-header videos">Supplementary Videos</div>
+            <div class="card-content">
+                <div class="card-icon">🎬</div>
+                <div class="card-description">
+                    <p>Watch supplementary video resources that demonstrate key OS concepts with real-world examples and visual explanations.</p>
+                </div>
+                <div class="card-cta videos">Watch Videos</div>
+            </div>
+        </a>
+    </div>
+    
+    <footer>
+        <p>© Department of Computer Science | Last Updated: April 29, 2025</p>
+        <p>This web server demonstrates OS concepts including multithreading, synchronization, and resource management.</p>
+    </footer>
+</body>
+</html>
